@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Orange">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/white">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:outlineAmbientShadowColor="@color/white"
+        app:cardElevation="30dp"
+        app:cardBackgroundColor="@color/white"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Information"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/Orange">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-50dp"
+                app:cardElevation="50dp"
+                android:id="@+id/dashcard1"
+                android:outlineAmbientShadowColor="@color/Orange">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/hospital"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:outlineAmbientShadowColor="@color/white"
+            app:cardElevation="30dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctors Information"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/Orange">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-50dp"
+                app:cardElevation="50dp"
+                android:id="@+id/dashcard2"
+                android:outlineAmbientShadowColor="@color/Orange">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/information1"
+                    tools:ignore="DuplicateIds" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:outlineAmbientShadowColor="@color/white"
+            app:cardElevation="30dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Staff Information"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/Orange">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-50dp"
+                app:cardElevation="50dp"
+                android:id="@+id/dashcard3"
+                android:outlineAmbientShadowColor="@color/Orange">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/staf"
+                    tools:ignore="DuplicateIds" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:outlineAmbientShadowColor="@color/white"
+                app:cardElevation="30dp"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Doctors Appoinment"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Orange">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-50dp"
+                app:cardElevation="50dp"
+                android:id="@+id/dashcard4"
+                android:outlineAmbientShadowColor="@color/Orange">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="90dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/apoinment"
+                    tools:ignore="DuplicateIds" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                app:cardElevation="30dp"
+                android:outlineAmbientShadowColor="@color/white"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Doctors Timings"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Orange">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-50dp"
+                app:cardElevation="50dp"
+                android:id="@+id/dashcard5"
+                android:outlineAmbientShadowColor="@color/Orange">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/timing"
+                    tools:ignore="DuplicateIds" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:outlineAmbientShadowColor="@color/white"
+                app:cardElevation="30dp"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OPD  Doctors"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Orange">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-50dp"
+                app:cardElevation="50dp"
+                android:id="@+id/dashcard6"
+                android:outlineAmbientShadowColor="@color/Orange">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/opd"
+                    tools:ignore="DuplicateIds" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:outlineAmbientShadowColor="@color/white"
+                app:cardElevation="30dp"
+                tools:ignore="MissingConstraints">
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-50dp"
+                app:cardElevation="50dp"
+                android:id="@+id/dashcard7"
+                android:outlineAmbientShadowColor="@color/Orange">
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:outlineAmbientShadowColor="@color/white"
+                app:cardElevation="30dp"
+                tools:ignore="MissingConstraints">
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-50dp"
+                app:cardElevation="50dp"
+                android:id="@+id/dashcard8"
+                android:outlineAmbientShadowColor="@color/Orange">
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:outlineAmbientShadowColor="@color/white"
+                app:cardElevation="30dp"
+                tools:ignore="MissingConstraints">
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-50dp"
+                app:cardElevation="50dp"
+                android:id="@+id/dashcard9"
+                android:outlineAmbientShadowColor="@color/Orange">
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
